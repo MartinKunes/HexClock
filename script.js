@@ -3,10 +3,10 @@ const hexTime = () => {
         return (element < 10 ? '0' : '') + element;
     };
 
-    let today = new Date();
-    let hodiny = addN(today.getHours());
-    let minuty = addN(today.getMinutes());
-    let sekundy = addN(today.getSeconds());
+    let dnes = new Date();
+    let hodiny = addN(dnes.getHours());
+    let minuty = addN(dnes.getMinutes());
+    let sekundy = addN(dnes.getSeconds());
 
     document.getElementById('title').innerHTML =  `#${hodiny}${minuty}${sekundy}`;
     document.getElementById('page').style.backgroundColor = `#${hodiny}${minuty}${sekundy}`;
